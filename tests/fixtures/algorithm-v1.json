@@ -1,0 +1,462 @@
+{
+  "algorithmVersion": "1",
+  "description": "Expected output captured from the production implementation before extraction, never from the packages under test.",
+  "originalAlgorithmsSha256": "8732896c72a96d4b413db9ff6c3a5f3c08eac7bf1d0351847a03ff2f3cadd4f9",
+  "fixtureGeneratorSha256": "b5b18555d6b3e21e60ee0844bf64b84d6685119d97a874f8976203c712303e1d",
+  "cases": [
+    {
+      "style": "ascii",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "output": {
+        "width": 102,
+        "height": 72,
+        "rgbaSha256": "0c13dfbeaa8016956d419152ff9d1a33f2d305ee811d14de3dd3092dabf930ea",
+        "asciiText": "..::----------+--\n----------+++++++\n---+++++++++++++=\n+++++++++========\n+===+=====%===%%%\n=======%%%%%%%%%*\n%%%%%%%%%%%%*****\n%%%%%*********@@@\n******@@*@@@@@@@@"
+      }
+    },
+    {
+      "style": "ascii",
+      "input": {
+        "id": "alpha",
+        "width": 41,
+        "height": 29,
+        "kind": "alpha"
+      },
+      "output": {
+        "width": 78,
+        "height": 56,
+        "rgbaSha256": "586eaf0ef9c7f5d89ddd1ae671e20df6fdafb4a9cd975fdd4ea9d6098bc2d34c",
+        "asciiText": "%%%%=%%%%%%*%\n%%%%%%%%%%*%*\n%*%**%*******\n*%********@**\n****@**@*@@@@\n@@@@*@@@@@@@@\n@@@@@@@@@#@@#"
+      }
+    },
+    {
+      "style": "ascii",
+      "input": {
+        "id": "noise-wide",
+        "width": 71,
+        "height": 11,
+        "kind": "noise"
+      },
+      "output": {
+        "width": 138,
+        "height": 24,
+        "rgbaSha256": "40812274ebd298a83e17e2a16289203e71eb4921beb52faa30571c1eeacd0ce1",
+        "asciiText": "%==%%==%=+==%=====%===%\n%================%%====\n=%=======%%========%%=="
+      }
+    },
+    {
+      "style": "ascii",
+      "input": {
+        "id": "single-transparent",
+        "width": 1,
+        "height": 1,
+        "kind": "transparent"
+      },
+      "output": {
+        "width": 6,
+        "height": 8,
+        "rgbaSha256": "e7eadccbaefbbe7968ac3bbf2d35dd6057a4bcc663d37ee3faf740f45cc8632c",
+        "asciiText": "#"
+      }
+    },
+    {
+      "style": "ascii",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "options": {
+        "asciiColumns": 85,
+        "invert": true
+      },
+      "output": {
+        "width": 102,
+        "height": 72,
+        "rgbaSha256": "361193ddbf609a2a4b79b37ec58a150337989f8d7dc6df6f2ec27dfc214a8480",
+        "asciiText": "##@@@@@@@@@******\n@@@@********%%*%%\n*****%**%%%%%%%%%\n%%%%%%%%%%==%%===\n%%%%%%%=========+\n========+++=+++++\n=+==++++++++++---\n+++++++--+-------\n+++----------::::"
+      }
+    },
+    {
+      "style": "pixel",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "073a67d1740afee24f1ae2b3f802bcf5fed210cd4c202411aa3ca71106445493"
+      }
+    },
+    {
+      "style": "pixel",
+      "input": {
+        "id": "alpha",
+        "width": 41,
+        "height": 29,
+        "kind": "alpha"
+      },
+      "output": {
+        "width": 41,
+        "height": 29,
+        "rgbaSha256": "ebaa1ea2d9894adc9cb04dbb93f85c45b01258dc68a94e39fbbbd4193a6ed7d7"
+      }
+    },
+    {
+      "style": "pixel",
+      "input": {
+        "id": "noise-wide",
+        "width": 71,
+        "height": 11,
+        "kind": "noise"
+      },
+      "output": {
+        "width": 71,
+        "height": 11,
+        "rgbaSha256": "4df5b26065a0f1aa731803990a71cc5d24c36b1fb7526214ecfe9f179dff6381"
+      }
+    },
+    {
+      "style": "pixel",
+      "input": {
+        "id": "single-transparent",
+        "width": 1,
+        "height": 1,
+        "kind": "transparent"
+      },
+      "output": {
+        "width": 1,
+        "height": 1,
+        "rgbaSha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+      }
+    },
+    {
+      "style": "pixel",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "options": {
+        "pixelSize": 4,
+        "colors": 32,
+        "dither": true
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "5c3aca7da6b83e768412f536f3f02f4da19d1b81e43d4f6e268f8870f1314af0"
+      }
+    },
+    {
+      "style": "cyanotype",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "18690d7c23b74e2b53af1bdc130207547ed171dbbcef76930d87fc895418f1d3"
+      }
+    },
+    {
+      "style": "cyanotype",
+      "input": {
+        "id": "alpha",
+        "width": 41,
+        "height": 29,
+        "kind": "alpha"
+      },
+      "output": {
+        "width": 41,
+        "height": 29,
+        "rgbaSha256": "101e71317d495fe21400c4c9aa55ff3203e4fe4e60166bd7f17d9a4663054dd6"
+      }
+    },
+    {
+      "style": "cyanotype",
+      "input": {
+        "id": "noise-wide",
+        "width": 71,
+        "height": 11,
+        "kind": "noise"
+      },
+      "output": {
+        "width": 71,
+        "height": 11,
+        "rgbaSha256": "bd9aadcc9a2ac61db400f91ee22fffbb4ed18e3c32a11f57ab5f5509763605cb"
+      }
+    },
+    {
+      "style": "cyanotype",
+      "input": {
+        "id": "single-transparent",
+        "width": 1,
+        "height": 1,
+        "kind": "transparent"
+      },
+      "output": {
+        "width": 1,
+        "height": 1,
+        "rgbaSha256": "e10e0260575c17eb7c7f7e6e5a47a829ea7e307c1b5c71b8b490e6b6dfa5a6e5"
+      }
+    },
+    {
+      "style": "cyanotype",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "options": {
+        "contrast": 2,
+        "exposure": 1
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "343bbd3712ea6dafd6bdc9e3784f562eebe7fe4483b2c732106ac5c64d87d0c3"
+      }
+    },
+    {
+      "style": "risograph",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "f8ede464cb13ea8f10d370b0c03573f0005e76032c3413acfdea8e736d8927f3"
+      }
+    },
+    {
+      "style": "risograph",
+      "input": {
+        "id": "alpha",
+        "width": 41,
+        "height": 29,
+        "kind": "alpha"
+      },
+      "output": {
+        "width": 41,
+        "height": 29,
+        "rgbaSha256": "a6f4619001b6781052fd44550f200b436eced08686dbcfe9ddba97759539dc0b"
+      }
+    },
+    {
+      "style": "risograph",
+      "input": {
+        "id": "noise-wide",
+        "width": 71,
+        "height": 11,
+        "kind": "noise"
+      },
+      "output": {
+        "width": 71,
+        "height": 11,
+        "rgbaSha256": "327a19133c1f7719b1579a391636b99ff82cc4946e80c6e4a93add6ae3257f82"
+      }
+    },
+    {
+      "style": "risograph",
+      "input": {
+        "id": "single-transparent",
+        "width": 1,
+        "height": 1,
+        "kind": "transparent"
+      },
+      "output": {
+        "width": 1,
+        "height": 1,
+        "rgbaSha256": "5785474835a0f24fd32ed0cbd7d3e32b0382f1cf40bc9d26b75a00472cafa3f2"
+      }
+    },
+    {
+      "style": "risograph",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "options": {
+        "inkCount": 3,
+        "dotSize": 3,
+        "registration": 4,
+        "grain": 0.25,
+        "seed": 4294967295
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "7533794db0a76722555e258d9ba53426f0dce1358ecaad70b29121045bb7b12f"
+      }
+    },
+    {
+      "style": "pop-art",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "123a1a7912381510e602501ad1ac9933570b2f86fe5cb6b548f074cbe9da9fcf"
+      }
+    },
+    {
+      "style": "pop-art",
+      "input": {
+        "id": "alpha",
+        "width": 41,
+        "height": 29,
+        "kind": "alpha"
+      },
+      "output": {
+        "width": 41,
+        "height": 29,
+        "rgbaSha256": "31725b2564dd3c8ee33add034659129462858229e0e94dc8fcea7b61d074d656"
+      }
+    },
+    {
+      "style": "pop-art",
+      "input": {
+        "id": "noise-wide",
+        "width": 71,
+        "height": 11,
+        "kind": "noise"
+      },
+      "output": {
+        "width": 71,
+        "height": 11,
+        "rgbaSha256": "0dfb548a70b61fde2162f6d7620c1a5e10b3a914562297ef98f095757f40a27b"
+      }
+    },
+    {
+      "style": "pop-art",
+      "input": {
+        "id": "single-transparent",
+        "width": 1,
+        "height": 1,
+        "kind": "transparent"
+      },
+      "output": {
+        "width": 1,
+        "height": 1,
+        "rgbaSha256": "5cc176eafc84a79dc634c0636c5f7f9d51e2e442122f4cc3db01a05b3afabe98"
+      }
+    },
+    {
+      "style": "pop-art",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "options": {
+        "dotSize": 3,
+        "outline": 1
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "4dd747c688962f860040a59f581a596e69ab3793ecc8f96ce5a97ee162864a83"
+      }
+    },
+    {
+      "style": "pointillism",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "b0df35d4a1d19d1f7f9295094d92bd4567f5c31b5e383275653f67350229a256"
+      }
+    },
+    {
+      "style": "pointillism",
+      "input": {
+        "id": "alpha",
+        "width": 41,
+        "height": 29,
+        "kind": "alpha"
+      },
+      "output": {
+        "width": 41,
+        "height": 29,
+        "rgbaSha256": "45b0e9dfe2fe7a059e8a5ac59de129761e18fbc0aa91a59c4e692c07c706d0c6"
+      }
+    },
+    {
+      "style": "pointillism",
+      "input": {
+        "id": "noise-wide",
+        "width": 71,
+        "height": 11,
+        "kind": "noise"
+      },
+      "output": {
+        "width": 71,
+        "height": 11,
+        "rgbaSha256": "8e7cd8c20a6981f7ab3e8814f1c7734100a146f237d4f5e9203632ceee7b63f5"
+      }
+    },
+    {
+      "style": "pointillism",
+      "input": {
+        "id": "single-transparent",
+        "width": 1,
+        "height": 1,
+        "kind": "transparent"
+      },
+      "output": {
+        "width": 1,
+        "height": 1,
+        "rgbaSha256": "ad95131bc0b799c0b1af477fb14fcf26a6a9f76079e48bf090acb7e8367bfd0e"
+      }
+    },
+    {
+      "style": "pointillism",
+      "input": {
+        "id": "gradient",
+        "width": 53,
+        "height": 39,
+        "kind": "gradient"
+      },
+      "options": {
+        "dotSize": 3,
+        "jitter": 0.5,
+        "seed": 4294967295
+      },
+      "output": {
+        "width": 53,
+        "height": 39,
+        "rgbaSha256": "665df94d17449e19e5a3cf422d8c0d8be4a270d91fca5d11f026231bc2517eb4"
+      }
+    }
+  ]
+}

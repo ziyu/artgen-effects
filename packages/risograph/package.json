@@ -1,0 +1,54 @@
+{
+  "name": "artgen-risograph",
+  "version": "0.1.0",
+  "description": "Seeded risograph image effects with spot inks, halftones and registration offsets.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "license": "MIT",
+  "author": "Artgen contributors",
+  "homepage": "https://artgen.net/en/tools/risograph-effect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziyu/artgen-effects.git",
+    "directory": "packages/risograph"
+  },
+  "bugs": {
+    "url": "https://github.com/ziyu/artgen-effects/issues"
+  },
+  "keywords": [
+    "risograph",
+    "riso",
+    "halftone",
+    "risograph-effect",
+    "print",
+    "artgen",
+    "image-processing",
+    "cloudflare-workers",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}

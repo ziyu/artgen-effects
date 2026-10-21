@@ -1,0 +1,31 @@
+{
+  "name": "artgen-effects",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic image-style algorithms from Artgen",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run test:unit && npm run test:worker",
+    "test:unit": "node --test tests/*.test.mjs",
+    "test:worker": "node tests/worker-smoke.mjs",
+    "pack": "node scripts/pack.mjs",
+    "release:check": "npm run typecheck && npm run build && npm test && npm run pack",
+    "release:publish": "node scripts/publish.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "esbuild": "0.28.2",
+    "miniflare": "4.20260730.0",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3"
+  }
+}
